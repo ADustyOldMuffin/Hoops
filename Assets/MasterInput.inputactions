@@ -1,0 +1,115 @@
+{
+    "name": "MasterInput",
+    "maps": [
+        {
+            "name": "BallThrow",
+            "id": "22fb90e6-65d3-4290-80e2-7983e45ca6a9",
+            "actions": [
+                {
+                    "name": "StartThrow",
+                    "type": "Button",
+                    "id": "d4350bcc-b6a1-4749-a01f-d17d6264e5d1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "StopThrow",
+                    "type": "Button",
+                    "id": "06613eb9-7bea-453a-8e78-8e3891ca7737",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "ThrowPosition",
+                    "type": "Value",
+                    "id": "218a2bdc-321c-44b0-a90d-155f32a023f6",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "097b82a2-ba4d-45cf-b42e-da5273e39187",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "KeybaordMouse",
+                    "action": "StartThrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "410bedf7-caba-4a95-856f-fb0f1fbf1e09",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "KeybaordMouse",
+                    "action": "StopThrow",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f91b2ace-5e9c-4237-985a-930273b41e92",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeybaordMouse",
+                    "action": "ThrowPosition",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Spawn",
+            "id": "2d9b717b-4e05-4c66-a6d3-1302bf4f103e",
+            "actions": [
+                {
+                    "name": "SpawnBall",
+                    "type": "Button",
+                    "id": "7368c70e-913a-4b06-8d24-2364b1fb15bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e9abb1f3-b43f-436a-916c-ce2f45c09ca6",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "KeybaordMouse",
+                    "action": "SpawnBall",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeybaordMouse",
+            "bindingGroup": "KeybaordMouse",
+            "devices": [
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
